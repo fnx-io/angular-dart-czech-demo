@@ -12,7 +12,7 @@
 
         <!-- obsah pod záhlavím -->
         <main class="relative">
-            <fnx-layout-sidebar #layout>
+            <fnx-layout-sidebar #layout (click)="layout.toggle()">
 
                 <!-- Levé menu -->
                 <div sidebar class="flex--column">
