@@ -1,12 +1,12 @@
 # Angular2 Dart - komentované příklady v češtině 
 
-Než se pustíte do Angularu, chtělo by to znát základy Daru. Typy, třídy, funkce ...
+Než se pustíte do Angularu, chtělo by to znát základy Dartu. Typy, třídy, funkce ...
 to by mělo pro začátek stačit. To zatím česky nemáme, ale něco pochytíte z této
 [prezentace](https://docs.google.com/presentation/d/1-_bajS9pD4-TG76wE5PYQrtDEKvOE9fuZxxxhRABy1o/edit#slide=id.g35f391192_029).
 Pokud vás angličtina nebolí, nejlepší budou
 [oficiální stránky](https://www.dartlang.org/guides/language/language-tour). 
 
-A pochopitelně budete potřebovat [https://www.dartlang.org/install](Dart SDK) a nějaký textový editor.
+A pochopitelně budete potřebovat [Dart SDK](https://www.dartlang.org/install) a nějaký textový editor.
 
 Odkazy na další zdroje najdete na [dartlang.cz](http://dartlang.cz).
 

@@ -13,6 +13,7 @@ main() {
 
   Level currentLoggingLevel = Level.ALL;
 
+  // nakonfigurujeme logování
   Logger.root.level = Level.ALL;
   Logger.root.onRecord.listen((LogRecord rec) {
     if (rec.level.value > currentLoggingLevel.value) {
@@ -24,6 +25,9 @@ main() {
     }
   });
 
+  // zinicializujeme Firebase - jsou to moje klíče,
+  // takže je možné si to nezávazně zkusit, ale na reaálný provoz nebo vývoj
+  // si budete muset pořídit vlastní ...
   f.App app = f.initializeApp(
       apiKey: "AIzaSyC8EqzmspNdtmF-QSYVpf9BBzGa0p5JMSU",
       authDomain: "aimtechackathon-674ed.firebaseapp.com",
@@ -31,6 +35,7 @@ main() {
       storageBucket: "aimtechackathon-674ed.appspot.com"
   );
 
+  // zaregistrujeme FB do dependency injection
   bootstrap(MainApp, [
       ROUTER_PROVIDERS,
       provide(LocationStrategy, useClass: HashLocationStrategy),

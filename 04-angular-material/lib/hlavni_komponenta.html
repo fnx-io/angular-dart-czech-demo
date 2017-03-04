@@ -1,17 +1,26 @@
-<h1>My First AngularDart App</h1>
+<h1>Moje první Material appka</h1>
 
-<material-input #myInput
-                label="Your name"
+<!--
+Textové pole. Všimněte si identifikátoru #mujInput, na který se dole odkazujeme.
+-->
+<material-input #mujInput
+                label="Tvoje jméno"
                 floatingLabel
                 autoFocus>
 </material-input>
 
+<!--
+Tlačítko s obsluhou události "trigger".
+-->
 <material-button raised 
-                 (trigger)="myDialog.open()"
+                 (trigger)="mujDialog.open()"
                  class="blue">
-    Say Hello
+    Pozdravit
 </material-button>
 
-<hello-dialog #myDialog
-             [name]="myInput.inputText">
-</hello-dialog>
+<!--
+Dialog, zatím je skrytý.
+-->
+<ahoj-dialog #mujDialog
+             [name]="mujInput.inputText">
+</ahoj-dialog>

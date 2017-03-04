@@ -9,8 +9,10 @@ import 'package:angular2_components/angular2_components.dart';
   providers: const [materialProviders],
 )
 class AhojDialog {
+  
   /*
-
+  Odkaz na materiálovou komponentu,
+  která zajišťuje "modální" chování.
    */
   @ViewChild('wrappingModal')
   ModalComponent wrappingModal;
@@ -22,11 +24,11 @@ class AhojDialog {
   String name = "";
 
   /*
-  Metoda, která dialog "zviditelní". Používá k tomu
-  meo
+  Metoda, která dialog "zviditelní".
    */
   void open([String name]) {
     if (name != null) this.name = name;
     wrappingModal.open();
   }
+
 }

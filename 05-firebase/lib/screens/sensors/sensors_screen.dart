@@ -13,11 +13,17 @@ class SensorsScreen implements OnInit, OnDestroy {
 
   SensorsScreen(this.database);
 
+  /*
+  Při startu komponenty se zaregistrujeme ke streamu nových dat z Firebase.
+   */
   @override
   void ngOnInit() {
      s = database.ref("/senzory").onChildAdded.listen(addNewEvent);
   }
 
+  /*
+    A pak po sobě uklidíme.
+   */
   @override
   ngOnDestroy() {
     s.cancel();

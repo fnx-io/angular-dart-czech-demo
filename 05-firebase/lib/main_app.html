@@ -1,13 +1,20 @@
 <fnx-app>
     <div class="layout--header">
+
+        <!-- záhlaví -->
         <header>
             <nav class="navbar">
+                <!-- tlačítko se objeví na tabletech a mobilech a rozbaluje levém menu -->
                 <button class="hide-on-l btn icon" (click)="layout.toggle()">menu</button>
                 <h1>fnx|ui</h1>
             </nav>
         </header>
+
+        <!-- obsah pod záhlavím -->
         <main class="relative">
             <fnx-layout-sidebar #layout>
+
+                <!-- Levé menu -->
                 <div sidebar class="flex--column">
                     <ul class="menu--vertical flex--grow bg--white--d1">
                         <li><a [routerLink]="['About']">About</a></li>
@@ -18,6 +25,7 @@
                     </p>
                 </div>
 
+                <!-- Hlavní obsah -->
                 <main class="border--left relative">
                     <router-outlet></router-outlet>
                 </main>

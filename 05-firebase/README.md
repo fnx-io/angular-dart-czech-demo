@@ -28,3 +28,9 @@ No a vždy se můžete zeptat (tomucha@gmail.com) nebo založit [issue](https://
 
 V příkladu jsem nechal nakonfigurovanou vlastní instanci Firebase, pro provoz
 si pochopitelně budeme muset [zaregistrovat vlastní](https://console.firebase.google.com/).
+
+Data do Firebase posílejte např.:
+ 
+     curl -X POST -d '{"sensor": "Popelnice 1", "value":"15 kg"}' https://aimtechackathon-674ed.firebaseio.com/senzory.json
+     
+... ovšem dříve nebo později bude zápis zakázán (= pořiďte si vlastní klíče).     

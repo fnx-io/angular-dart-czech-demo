@@ -26,6 +26,7 @@ class MainApp implements AfterViewInit {
 
   @override
   void ngAfterViewInit() {
+    // ukázka zpráv pro uživatele
     app.toast("Jedu, žiju, jsem cajk!");
   }
 
