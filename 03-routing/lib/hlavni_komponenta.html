@@ -1,0 +1,14 @@
+<h1>Vyber jak pokračovat</h1>
+
+<p>
+    <!-- Directiva routerLink se postará o vyrenderování správné cesty -->
+
+    <a class="item" [routerLink]="['Cesta1']">Obsah 1</a>
+
+    <a class="item" [routerLink]="['Cesta2']">Obsah 3</a>
+
+    <a class="item" [routerLink]="['Cesta3', {'parametr':'1243'}]">Obsah 3</a>
+
+</p>
+
+<router-outlet></router-outlet>

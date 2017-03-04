@@ -1,0 +1,11 @@
+<div class="flex--column padding">
+    <p class="padding">Naše sofistikovaná senzorová data v reálném čase</p>
+    <fnx-scroll-panel>
+        <table class="table--stripes">
+            <tr *ngFor="let sd of sensorData">
+                <td>{{sd['sensor']}}</td>
+                <td>{{sd['value']}}</td>
+            </tr>
+        </table>
+    </fnx-scroll-panel>
+</div>
