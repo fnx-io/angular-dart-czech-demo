@@ -6,10 +6,10 @@
   uživateli.
 
  */
-class MujSuperKonext {
+class MujSuperKontext {
 
   String hlavniHodnota;
 
-  MujSuperKonext(this.hlavniHodnota);
+  MujSuperKontext(this.hlavniHodnota);
 
 }

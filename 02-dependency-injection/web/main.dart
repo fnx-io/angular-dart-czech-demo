@@ -16,13 +16,13 @@ void main() {
     apod.
 
    */
-  MujSuperKonext konext = new MujSuperKonext("magic");
+  MujSuperKontext konext = new MujSuperKontext("magic");
 
   /*
     ... a při startu Angularu objekty zaregistrujeme do Dependency Injection.
    */
   bootstrap(HlavniKomponenta,
-      [provide(MujSuperKonext, useValue : konext)]
+      [provide(MujSuperKontext, useValue : konext)]
   );
   
 }

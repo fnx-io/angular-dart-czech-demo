@@ -17,8 +17,10 @@ import 'package:simple_angular/muj_super_kontext.dart';
     /* šablona je tu stále dost krátká na to, abychom ji dávali
     do zvláštního souboru, ale využijeme víceřádkové řetězce Dartu.*/
     template: '''
-    <h1>DI {{kontext.hlavniHodnota}}</h1>
-    <mala-komponenta nazev="Opravdu"></mala-komponenta>
+
+      <h1>DI {{kontext.hlavniHodnota}}</h1>
+      <mala-komponenta nazev="Opravdu"></mala-komponenta>
+
     ''',
     /* musíme deklarovat, které komponenty budeme používat,
     ale jde to udělat i globálně v pubspec.yaml */
@@ -27,7 +29,7 @@ import 'package:simple_angular/muj_super_kontext.dart';
 class HlavniKomponenta {
   String name = "DI";
 
-  MujSuperKonext kontext;
+  MujSuperKontext kontext;
 
   HlavniKomponenta(this.kontext);
 }
