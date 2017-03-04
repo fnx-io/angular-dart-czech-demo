@@ -12,7 +12,12 @@ import 'package:angular2/core.dart';
  */
 @Component(
   selector: 'hlavni-komponenta',         /* tj. jak se komponenta identifikuje v HTML souborech */
-  template: '<h1>Ahoj {{jmeno}}!</h1>'   /* šablona (view) komponenty, lze ji oddělit do samostatného souboru */
+  template: '''
+
+    <h1>Ahoj {{jmeno}}!</h1>
+    <p><input type="text" [(ngModel)]="jmeno"></p>
+
+    '''
 )
 class HlavniKomponenta {
 
